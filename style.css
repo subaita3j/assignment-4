@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Delius+Unicase&family=Inter:wght@400;500&family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b4664;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 100px;
+  margin-bottom: 10px;
+  margin-right: 200px;
+}
+
+.input-field {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.display {
+  font-family: 'Segoe UI';
+  font-weight: 700;
+  font-size: 35px;
+  height: 75px;
+  width: 87%;
+  text-align: right;
+  color: #fff;
+  border-radius: 5px;
+  background: #181f32;
+  line-height: normal;
+  letter-spacing: 10px;
+}
+.display:focus {
+  color: transparent;
+  text-shadow: 0px 0px 0px #fff;
+}
+::placeholder {
+  color: #fff;
+}
+
+.Numpad {
+  border-radius: 5px;
+  background: #252d44;
+  height: 100%;
+  width: 400px;
+  padding: 20px;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  cursor: pointer;
+}
+.btn-number {
+  margin: 10px;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #eae3db;
+  color: #181f32;
+  font-family: inter;
+  font-weight: 800;
+  font-size: 20px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btn-del {
+  margin: 10px;
+  padding: 6px;
+  background-color: #3b4664;
+  border-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-reset {
+  grid-column-start: -3;
+  grid-column-end: 1;
+  background-color: #647299;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 15px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-equal {
+  grid-column-start: -1;
+  grid-column-end: 3;
+  margin: 10px;
+  padding: 10px;
+  background-color: #d13f30;
+  color: #fff;
+  font-family: inter;
+  font-weight: 800;
+  font-size: 15px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
